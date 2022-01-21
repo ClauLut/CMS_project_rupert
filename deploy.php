@@ -7,7 +7,7 @@ require 'recipe/common.php';
 set('application', 'rupert-rettenbacher');
 
 // Project repository
-set('repository', 'https://github.com/annret/CMS-rupert');
+set('repository', 'https://github.com/ClauLut/CMS_project_rupert');
 
 // [Optional] Allocate tty for git clone. Default value is false.
 set('git_tty', true); 
@@ -25,7 +25,7 @@ set('allow_anonymous_stats', false);
 host('vm-plum.multimediatechnology.at')
 	->user('admin')
 		->port(5412)
-		->set('deploy_path', '/home/admin/rupert-rettenbacher');
+		->set('deploy_path', '/home/admin/rupert');
 
 // Composer
 set('composer_action', false);
