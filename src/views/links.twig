@@ -1,0 +1,9 @@
+{% block content %}
+
+    {% for l in links %}
+
+        <a target="_blank" href="{{ l.meta('link') }}"> | {{ l.title }} | </a>
+
+    {% endfor %}
+
+{% endblock %}

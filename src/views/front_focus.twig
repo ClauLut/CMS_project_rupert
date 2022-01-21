@@ -1,0 +1,9 @@
+{% block content %}
+
+    {% for f in focus %}
+        <div class="box">
+            <a href="?page_id={{ id }}"><h3>{{f.title}}</h3><img src="{{ f.thumbnail.url }}" alt="{{ f.thumbnail.alt }}"></a>
+        </div>
+    {% endfor %}
+
+{% endblock %}

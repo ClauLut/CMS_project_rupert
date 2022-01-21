@@ -1,0 +1,33 @@
+footer {
+  background-color: $light-green;
+  padding: 2em;
+  text-align: center;
+  margin-top: 6rem;
+
+  div {
+    display: inline-flex;
+  }
+  ul {
+    display: inline-flex;
+  }
+  li {
+    font-size: 16px;
+    padding: 10px;
+  }
+  p {
+    padding: 10px;
+  }
+}
+
+/* Mobile Version */
+@media (max-width: 768px) {
+  footer {
+    margin-top: 1rem;
+    div {
+      display: inline-block;
+    }
+    ul {
+      display: inline-block;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{% block content %}
+    {% for n in news %}
+        <li>
+            <h3>{{ n.title }}</h3>
+            <p>{{n.post_content|excerpt(30)}}</p>
+            <a href="{{ n.meta('link') }}">[hier]</a>
+        </li>
+    {% endfor %}
+{% endblock %}

@@ -1,0 +1,125 @@
+#contact {
+  flex-direction: row;
+
+  .contact-box {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    padding-block: 5rem;
+  }
+
+  #green-box {
+    border-right: 4px solid;
+    border-color: $green;
+    text-align: center;
+
+    h3 {
+      color: $green;
+      padding-bottom: 2rem;
+    }
+    form {
+
+      input {
+        font-size: 16px;
+        font-family: 'Nunito';
+        width: 80%;
+        margin-block: 12px;
+      }
+
+      @media (min-width: 768px) {
+
+        #lastName, #firstName {
+          width: 39%;
+        }
+      }
+
+      textarea {
+        width: 80%;
+        margin-block: 10px;
+        font-size: 16px;
+        font-family: 'Nunito';
+        color: $dark-gray;
+        height: 100px;
+      }
+
+      .submit {
+        font-size: 18px;
+        color: $white;
+        cursor: pointer;
+        background-color: $green;
+        border-radius: 20px;
+        border-color: transparent;
+        margin-top: 30px;
+        width: 100px;
+      }
+    }
+  }
+
+  img {
+    width: 35px;
+    opacity: 0.2;
+    margin-inline: 20px;
+  }
+  li {
+    font-size: 22px;
+    color: $dark-gray;
+    line-height: 1.5em;
+    display: flex;
+    align-items: center;
+    padding-block: 0.7rem;
+  }
+}
+
+#links {
+  text-align: center;
+
+  a {
+    color: $green;
+    font-size: 20px;
+    padding: 6px;
+
+    &:hover {
+      font-weight: bold;
+    }
+  }
+}
+
+/* Mobile version */
+@media (max-width: 768px) {
+  #contact {
+    flex-direction: column;
+    align-items: center;
+
+    li {
+      font-size: 20px;
+    }
+
+    img {
+      width: 30px;
+    }
+
+    #special_img {
+      width: 40px;
+    }
+
+    .contact-box {
+      width: 90%;
+      padding-block: 3rem;
+    }
+
+    #green-box {
+      border-bottom: 4px solid;
+      border-right: none;
+      border-color: $green;
+    }
+
+  }
+  #links {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+

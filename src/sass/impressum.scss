@@ -1,0 +1,28 @@
+#impressum {
+  width: 60%;
+  margin-inline: auto;
+
+  h2 {
+    padding-block: 1rem;
+    padding-bottom: 5rem;
+  }
+  a {
+    color: $green;
+  }
+  p {
+    line-height: 1.5;
+  }
+}
+
+/* Mobile version */
+@media (max-width: 768px) {
+  #impressum {
+    margin: 2rem;
+    width: 80%;
+
+    h2 {
+      padding-bottom: 1.5rem;
+      padding-top: 3rem;
+    }
+  }
+}

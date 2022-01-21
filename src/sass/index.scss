@@ -1,0 +1,31 @@
+@import "reset";
+
+$white: #ffffff;
+$light-gray: #dadada;
+$dark-gray: #707070;
+$green: #186f22;
+$light-green: #B3EFB2;
+$dark-blue: #001A23;
+
+/* nunito-regular - latin */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../rupert/fonts/nunito-v20-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../rupert/fonts/nunito-v20-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../rupert/fonts/nunito-v20-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../rupert/fonts/nunito-v20-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../rupert/fonts/nunito-v20-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../rupert/fonts/nunito-v20-latin-regular.svg#Nunito') format('svg'); /* Legacy iOS */
+  }
+
+@import "body";
+@import "header";
+@import "main";
+@import "focus";
+@import "about";
+@import "contact";
+@import "impressum";
+@import "footer";

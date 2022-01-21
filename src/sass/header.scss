@@ -1,0 +1,64 @@
+header {
+  background-image: url(../rupert/images/background-header.png);
+  background-size: cover;
+  margin: 0;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+/*navbar*/
+#navbar {
+  background-color: $light-green;
+  padding: 20px;
+
+  ul {
+    display: inline-flex;
+
+    a {
+      margin: 0.75em;
+      font-size: 20px;
+
+      &:hover {
+        color: $green;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+/*hero-section*/
+#hero-index {
+  text-align: center;
+  padding-block: 90px;
+
+  img {
+    width: 10%;
+    height: 10%;
+  }
+}
+
+/* Mobile version */
+@media (max-width: 768px) {
+  header {
+    margin-bottom: 1rem;
+  }
+
+  #hero-index {
+    padding-block: 30px;
+
+    img {
+      width: 20%;
+      height: 20%;
+    }  
+  }
+
+  #navbar {
+    text-align: center;
+    ul {
+      flex-direction: column;
+      li {
+        padding-block: 10px;
+      }
+    }
+  }
+}

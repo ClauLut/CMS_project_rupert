@@ -1,0 +1,12 @@
+{% block content %}
+    {% set count = 1 %}
+    {% for f in focus %}
+        <div class="focus-box" id="box-{{count}}">
+            <img src="{{ f.thumbnail.url }}" alt="{{ f.thumbnail.alt }}">
+            <h2>{{f.title}}</h2>
+            <h3>{{ f.meta('subtitle') }}</h3>
+            <p>{{ f.content }}</p>
+        </div> 
+        {% set count = 2 %}
+    {% endfor %}
+{% endblock %}

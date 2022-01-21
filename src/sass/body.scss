@@ -1,0 +1,60 @@
+/*body*/
+body {
+  font-family: 'Nunito';
+}
+
+/*text*/
+h1 {
+  color: $green;
+  font-size: 40px;
+  padding-block: 1rem;
+  letter-spacing: 1.5px;
+}
+h2 {
+  color: $green;
+  font-size: 35px;
+  padding-block: 1rem;
+  padding-bottom: 5rem;
+  letter-spacing: 1.5px;
+}
+h3 {
+  color: $dark-blue;
+  font-size: 22px;
+  padding-block: 0.3rem;
+}
+p {
+  color: $dark-blue;
+  font-size: 18px;
+}
+a {
+  color: $dark-blue;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Mobile version */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 27px;
+    padding-bottom: 3rem;
+  }
+  h3 {
+    font-size: 18px;
+  }
+}
+
+/*scrollbar*/
+@media (min-width: 768px) {
+  ::-webkit-scrollbar {
+    width: 0.5rem;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: $green;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: $green;
+  }
+}

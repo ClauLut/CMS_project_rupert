@@ -1,0 +1,148 @@
+.flex-container {
+  display: flex;
+  padding-block: 7rem;
+}
+
+/*general-section*/
+#general {
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    width: 50%;
+
+    img {
+      width: 40%;
+      border: 4px solid;
+      border-color: $green;
+      box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 20px 0px;
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 60%;
+    padding-left: 4rem;
+
+    p {
+      font-size: 18px;
+      color: $dark-gray;
+      line-height: 1.5em;
+      hyphens: auto;
+      width: 80%;
+    }
+  }
+}
+
+/*focus-section*/
+#focus-index {
+  text-align: center;
+  flex-direction: column;
+
+  #focus-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+  
+  .box {
+    display: inline-flex;
+    flex-direction: column;
+    text-align: center;
+    border: 4px solid;
+    border-color: $green;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 20px 0px;
+    padding: 1rem;
+    width: 22%;
+
+    img {
+      padding-top: 3em;
+      opacity: 0.45;
+      width: 200px;
+    }
+    a {
+      font-size: 18px;
+      padding-block: 2rem;
+    }
+  }
+}
+
+/*news-section*/
+#news {
+  align-items: center;
+  flex-direction: column;
+
+  p {
+    padding-block: 0.5rem;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    border: 4px solid;
+    border-color: $green;
+    box-shadow: rgba(100, 100, 111, 0.5) 0px 7px 20px 0px;
+    width: 50%;
+    
+    li {
+      padding: 1rem;
+
+      a {
+        font-weight: bold;
+        color: $green;
+      }
+    }
+  }
+}
+
+
+/* Mobile version */
+@media (max-width: 768px) {
+  .flex-container {
+    padding-block: 2rem;
+  }
+  #general {
+    flex-direction: column;
+    align-items: center;
+    padding-inline: 2rem;
+
+    .right {
+      width: 90%;
+      align-items: center;
+      padding-left: 0;
+      p {
+        width: 100%;
+      }
+    }
+    .left {
+      align-items: center;
+      width: 90%;
+      img {
+        margin-bottom: 2rem;
+        width: 70%;
+      }
+    }
+  }
+  #news {
+    ul {
+      width: 80%;
+      padding: 1rem;
+    }
+  }
+  #focus-index {
+    #focus-box {
+      flex-direction: column;
+      align-items: center;
+  
+      .box {
+        width: 70%;
+        margin-bottom: 2rem;
+      }
+    }
+  }
+}
