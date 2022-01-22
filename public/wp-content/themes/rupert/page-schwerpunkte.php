@@ -9,7 +9,6 @@
         $context = Timber::context();
         $args = 'order=DESC&category_name=schwerpunkt&posts_per_page=2'; 
         $context['focus'] = Timber::get_posts( $args );
-        // $page['id'] = Timber::get_page_by_title( 'Schwerpunkte' )->ID;
         Timber::render( 'focus.twig', $context);
     ?>
   </section>

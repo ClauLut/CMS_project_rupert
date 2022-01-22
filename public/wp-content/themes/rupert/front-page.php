@@ -19,10 +19,7 @@
         <h2>Schwerpunkte</h2>
         <div id="focus-box">
             <?php
-                // $link = GetPageLink('schwerpunkte');
                 $page = get_page_by_title( 'Schwerpunkte', '', 'page' );
-                // $page = get_page_by_path('schwerpunkte');
-                // $permalink = apply_filters('get_permalink', $page->post_permalink);
                 $context = Timber::context();
                 $args = 'order=DESC&category_name=schwerpunkt&posts_per_page=2'; 
                 $context['focus'] = Timber::get_posts( $args );
