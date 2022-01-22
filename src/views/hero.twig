@@ -1,6 +1,3 @@
-{% block content %}
-    {% for h in hero %}
-        <h3>{{ h.meta('herotitle') }}</h3>
-        <h3>{{ h.meta('herosubtitle') }}</h3>
-    {% endfor %}
-{% endblock %}
+
+<h3>{{ hero.meta('herotitle') }}</h3>
+<h3>{{ hero.meta('herosubtitle') }}</h3>
