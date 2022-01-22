@@ -24,7 +24,7 @@
                 // $page = get_page_by_path('schwerpunkte');
                 // $permalink = apply_filters('get_permalink', $page->post_permalink);
                 $context = Timber::context();
-                $args = 'order=DESC&category_name=Schwerpunkt&posts_per_page=2'; 
+                $args = 'order=DESC&category_name=schwerpunkt&posts_per_page=2'; 
                 $context['focus'] = Timber::get_posts( $args );
                 $context['id'] = $page->ID;
                 Timber::render( 'front_focus.twig', $context );
@@ -38,7 +38,7 @@
           <ul>
             <?php
                 $context = Timber::context();
-                $args = 'order=DESC&category_name=News&posts_per_page=3'; 
+                $args = 'order=DESC&category_name=news&posts_per_page=3'; 
                 $context['news'] = Timber::get_posts( $args );
                 Timber::render( 'news.twig', $context );
             ?>
